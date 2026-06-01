@@ -16,5 +16,11 @@ wheels/
 *.bak
 .DS_Store
 
+# Coverage artifacts
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
 # Generated reports during local runs (the committed matrix lives in matrix/)
 runs/
