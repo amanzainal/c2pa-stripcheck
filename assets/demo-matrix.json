@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "tool_version": "0.1.0",
+  "generated_at": "2026-06-01T18:04:30+00:00",
+  "counts": {
+    "PRESERVED": 1,
+    "STRIPPED": 1,
+    "RE-SIGNED": 1,
+    "SOFT-BINDING-RECOVERABLE": 1
+  },
+  "rows": [
+    {
+      "platform": "preserve-co",
+      "display_name": "Preserve Co (demo)",
+      "kind": "mock",
+      "verdict": "PRESERVED",
+      "reason": "Re-fetched asset carries the same manifest signer/generator.",
+      "reader": "builtin-scanner",
+      "signer_before": "CN=Synthetic Demo Signer, O=stripcheck, C=XX",
+      "signer_after": "CN=Synthetic Demo Signer, O=stripcheck, C=XX",
+      "soft_binding_id": "demo-wm-001",
+      "tested_at": "2026-06-01T18:04:30+00:00",
+      "error": null
+    },
+    {
+      "platform": "strip-net",
+      "display_name": "StripNet (demo)",
+      "kind": "mock",
+      "verdict": "STRIPPED",
+      "reason": "Re-fetched asset carries no manifest and no recoverable soft binding.",
+      "reader": "builtin-scanner",
+      "signer_before": "CN=Synthetic Demo Signer, O=stripcheck, C=XX",
+      "signer_after": null,
+      "soft_binding_id": null,
+      "tested_at": "2026-06-01T18:04:30+00:00",
+      "error": null
+    },
+    {
+      "platform": "resign-app",
+      "display_name": "ReSignApp (demo)",
+      "kind": "mock",
+      "verdict": "RE-SIGNED",
+      "reason": "Re-fetched asset carries a manifest from a different signer than was uploaded (platform replaced the credentials).",
+      "reader": "builtin-scanner",
+      "signer_before": "CN=Synthetic Demo Signer, O=stripcheck, C=XX",
+      "signer_after": "CN=Platform Re-Signer, O=ExamplePlatform, C=XX",
+      "soft_binding_id": null,
+      "tested_at": "2026-06-01T18:04:30+00:00",
+      "error": null
+    },
+    {
+      "platform": "softbind-social",
+      "display_name": "SoftBind Social (demo)",
+      "kind": "mock",
+      "verdict": "SOFT-BINDING-RECOVERABLE",
+      "reason": "Embedded manifest removed, but a TrustMark soft-binding watermark survived; provenance is recoverable via the CAI Soft-Binding Resolution API.",
+      "reader": "builtin-scanner",
+      "signer_before": "CN=Synthetic Demo Signer, O=stripcheck, C=XX",
+      "signer_after": null,
+      "soft_binding_id": "demo-wm-001",
+      "tested_at": "2026-06-01T18:04:30+00:00",
+      "error": null
+    }
+  ]
+}
