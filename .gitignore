@@ -1,0 +1,20 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Local secrets / env
+.env
+
+# Editor / backup
+*.bak
+.DS_Store
+
+# Generated reports during local runs (the committed matrix lives in matrix/)
+runs/

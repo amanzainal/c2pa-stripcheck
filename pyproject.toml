@@ -1,0 +1,43 @@
+[project]
+name = "c2pa-stripcheck"
+version = "0.1.0"
+description = "Automated tester and crowd-maintained matrix for whether platforms strip C2PA Content Credentials on upload."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+    { name = "Aman Zainal", email = "aman@u.nus.edu" }
+]
+keywords = ["c2pa", "content-credentials", "provenance", "trustmark", "soft-binding", "cai"]
+requires-python = ">=3.13"
+dependencies = [
+    "httpx>=0.28.1",
+    "jinja2>=3.1.6",
+    "rich>=15.0.0",
+]
+
+[project.optional-dependencies]
+# c2pa-python is an OPTIONAL native reader. The tool degrades gracefully without it
+# (and without the c2patool CLI) by falling back to a built-in JUMBF/manifest scanner.
+verify = [
+    "c2pa-python>=0.8.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/AmanZainal/c2pa-stripcheck"
+Repository = "https://github.com/AmanZainal/c2pa-stripcheck"
+
+[project.scripts]
+c2pa-stripcheck = "c2pa_stripcheck.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.11.8,<0.12.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.3",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
