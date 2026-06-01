@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "tool_version": "0.1.0",
+  "generated_at": "2026-06-01T17:24:50+00:00",
+  "counts": {
+    "UNTESTED": 6
+  },
+  "rows": [
+    {
+      "platform": "instagram",
+      "display_name": "Instagram",
+      "kind": "stub",
+      "verdict": "UNTESTED",
+      "reason": "Adapter is a stub; no live result.",
+      "reader": "builtin-scanner",
+      "signer_before": "CN=Synthetic Demo Signer, O=stripcheck, C=XX",
+      "signer_after": null,
+      "soft_binding_id": null,
+      "tested_at": "2026-06-01T17:24:50+00:00",
+      "error": "The 'instagram' adapter is a stub. Implement upload()/refetch() with real credentials, or record observed behavior in the matrix. See CONTRIBUTING.md."
+    },
+    {
+      "platform": "x",
+      "display_name": "X (Twitter)",
+      "kind": "stub",
+      "verdict": "UNTESTED",
+      "reason": "Adapter is a stub; no live result.",
+      "reader": "builtin-scanner",
+      "signer_before": "CN=Synthetic Demo Signer, O=stripcheck, C=XX",
+      "signer_after": null,
+      "soft_binding_id": null,
+      "tested_at": "2026-06-01T17:24:50+00:00",
+      "error": "The 'x' adapter is a stub. Implement upload()/refetch() with real credentials, or record observed behavior in the matrix. See CONTRIBUTING.md."
+    },
+    {
+      "platform": "whatsapp",
+      "display_name": "WhatsApp",
+      "kind": "stub",
+      "verdict": "UNTESTED",
+      "reason": "Adapter is a stub; no live result.",
+      "reader": "builtin-scanner",
+      "signer_before": "CN=Synthetic Demo Signer, O=stripcheck, C=XX",
+      "signer_after": null,
+      "soft_binding_id": null,
+      "tested_at": "2026-06-01T17:24:50+00:00",
+      "error": "The 'whatsapp' adapter is a stub. Implement upload()/refetch() with real credentials, or record observed behavior in the matrix. See CONTRIBUTING.md."
+    },
+    {
+      "platform": "reddit",
+      "display_name": "Reddit",
+      "kind": "stub",
+      "verdict": "UNTESTED",
+      "reason": "Adapter is a stub; no live result.",
+      "reader": "builtin-scanner",
+      "signer_before": "CN=Synthetic Demo Signer, O=stripcheck, C=XX",
+      "signer_after": null,
+      "soft_binding_id": null,
+      "tested_at": "2026-06-01T17:24:50+00:00",
+      "error": "The 'reddit' adapter is a stub. Implement upload()/refetch() with real credentials, or record observed behavior in the matrix. See CONTRIBUTING.md."
+    },
+    {
+      "platform": "tiktok",
+      "display_name": "TikTok",
+      "kind": "stub",
+      "verdict": "UNTESTED",
+      "reason": "Adapter is a stub; no live result.",
+      "reader": "builtin-scanner",
+      "signer_before": "CN=Synthetic Demo Signer, O=stripcheck, C=XX",
+      "signer_after": null,
+      "soft_binding_id": null,
+      "tested_at": "2026-06-01T17:24:50+00:00",
+      "error": "The 'tiktok' adapter is a stub. Implement upload()/refetch() with real credentials, or record observed behavior in the matrix. See CONTRIBUTING.md."
+    },
+    {
+      "platform": "linkedin",
+      "display_name": "LinkedIn",
+      "kind": "stub",
+      "verdict": "UNTESTED",
+      "reason": "Adapter is a stub; no live result.",
+      "reader": "builtin-scanner",
+      "signer_before": "CN=Synthetic Demo Signer, O=stripcheck, C=XX",
+      "signer_after": null,
+      "soft_binding_id": null,
+      "tested_at": "2026-06-01T17:24:50+00:00",
+      "error": "The 'linkedin' adapter is a stub. Implement upload()/refetch() with real credentials, or record observed behavior in the matrix. See CONTRIBUTING.md."
+    }
+  ]
+}
