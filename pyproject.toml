@@ -23,8 +23,8 @@ verify = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/AmanZainal/c2pa-stripcheck"
-Repository = "https://github.com/AmanZainal/c2pa-stripcheck"
+Homepage = "https://github.com/amanzainal/c2pa-stripcheck"
+Repository = "https://github.com/amanzainal/c2pa-stripcheck"
 
 [project.scripts]
 c2pa-stripcheck = "c2pa_stripcheck.cli:main"
